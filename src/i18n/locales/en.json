@@ -1,0 +1,67 @@
+{
+  "common": {
+    "welcome": "Welcome!",
+    "home": "Home",
+    "explore": "Explore",
+    "profile": "Profile",
+    "settings": "Settings",
+    "language": "Language",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "back": "Back",
+    "code": "en"
+  },
+  "navigation": {
+    "home": "Home",
+    "explore": "Explore",
+    "profile": "Profile"
+  },
+  "screens": {
+    "home": {
+      "title": "Welcome!",
+      "subtitle": "This is the main page of the application",
+      "description": "Start exploring our amazing features",
+      "increment": "Increment",
+      "decrement": "Decrement",
+      "reset": "Reset"
+    },
+    "explore": {
+      "title": "Explore",
+      "subtitle": "Here you can discover new possibilities",
+      "description": "Find something interesting for yourself"
+    },
+    "profile": {
+      "title": "Profile",
+      "subtitle": "User settings",
+      "description": "Manage your account and preferences"
+    },
+    "notFound": {
+      "title": "This page doesn't exist.",
+      "goHome": "Go to home screen!"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": {
+      "title": "Language",
+      "description": "Choose your preferred language",
+      "english": "English",
+      "russian": "Русский"
+    },
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "errors": {
+    "networkError": "Network connection error",
+    "serverError": "Server error",
+    "unknownError": "Unknown error occurred",
+    "tryAgain": "Please try again"
+  }
+}

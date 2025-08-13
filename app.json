@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "expo-start-template",
+    "slug": "expo-start-template",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./src/assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Allow $(PRODUCT_NAME) to access your Face ID biometric data for secure authentication."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./src/assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "scheme": "expo-start-template",
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-localization",
+      "expo-secure-store"
+    ]
+  }
+}
