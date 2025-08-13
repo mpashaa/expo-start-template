@@ -1,0 +1,47 @@
+---
+globs: src/components/*.tsx
+description: Паттерны для создания компонентов
+---
+
+# Паттерны компонентов
+
+## Структура компонента:
+```typescript
+import React, { FC } from 'react';
+import { StyleSheet, View } from 'react-native';
+
+interface ComponentProps {
+  // определи props здесь
+}
+
+export const Component: FC<ComponentProps> = ({ ...props }) => {
+  return (
+    <View style={styles.container}>
+      {/* JSX здесь */}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    // стили здесь
+  },
+});
+```
+
+## Экспорт компонентов:
+- Все компоненты должны быть экспортированы из [src/components/index.ts](mdc:src/components/index.ts)
+- Используй именованный экспорт, не default
+
+## Существующие компоненты:
+- [Counter.tsx](mdc:src/components/Counter.tsx) - пример с Redux
+- [ExampleCard.tsx](mdc:src/components/ExampleCard.tsx) - пример карточки
+- [LanguageSwitcher.tsx](mdc:src/components/LanguageSwitcher.tsx) - переключатель языка
+- [ThemeSwitcher.tsx](mdc:src/components/ThemeSwitcher.tsx) - переключатель темы
+
+## Правила:
+- Один компонент на файл
+- Используй PascalCase для имен компонентов и файлов
+- Группируй связанные стили вместе
+- Используй типизированные props
+- Добавляй комментарии для сложной логики

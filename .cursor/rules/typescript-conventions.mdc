@@ -1,0 +1,44 @@
+---
+globs: *.ts,*.tsx
+description: Конвенции TypeScript для Expo проекта
+---
+
+# TypeScript Конвенции
+
+## Общие правила:
+- Всегда используй точки с запятой
+- Используй строгую типизацию
+- Предпочитай interface вместо type для объектов
+- Экспортируй типы из [src/types/](mdc:src/types/)
+
+## Компоненты React Native:
+- Используй FC (FunctionComponent) для типизации компонентов
+- Создавай Props интерфейсы для каждого компонента
+- Используй StyleSheet.create() для стилей
+- Импортируй компоненты из 'react-native', не из 'react-native-web'
+
+## Redux:
+- Используй типизированные хуки из [src/store/hooks.ts](mdc:src/store/hooks.ts)
+- Создавай типы для состояния в [src/types/redux.ts](mdc:src/types/redux.ts)
+- Используй createSlice из Redux Toolkit
+
+## Навигация:
+- Используй типизированную навигацию с Expo Router
+- Определяй типы для параметров маршрутов
+
+## Примеры:
+```typescript
+// Компонент
+interface ButtonProps {
+  title: string;
+  onPress: () => void;
+}
+
+export const Button: FC<ButtonProps> = ({ title, onPress }) => {
+  return (
+    <Pressable onPress={onPress}>
+      <Text>{title}</Text>
+    </Pressable>
+  );
+};
+```

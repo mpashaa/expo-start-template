@@ -1,0 +1,35 @@
+---
+alwaysApply: true
+description: Структура проекта Expo с TypeScript
+---
+
+# Структура проекта Expo Start Template
+
+Это Expo проект с TypeScript, использующий Expo Router для навигации и Redux Toolkit для управления состоянием.
+
+## Основные директории:
+
+- **app/**: Содержит экраны и навигацию (Expo Router)
+  - `_layout.tsx` - корневой layout
+  - `(tabs)/` - табы навигации с экранами: index, explore, profile, settings
+- **src/**: Основной исходный код
+  - `components/` - переиспользуемые компоненты React Native
+  - `contexts/` - React контексты (ThemeContext)
+  - `hooks/` - кастомные хуки (useI18n, useSecureStore, useTokens)
+  - `i18n/` - интернационализация с поддержкой ru/en
+  - `store/` - Redux Toolkit store и слайсы
+  - `theme/` - цвета и токены темы
+  - `types/` - TypeScript типы
+
+## Ключевые файлы:
+- [app.json](mdc:app.json) - конфигурация Expo
+- [package.json](mdc:package.json) - зависимости и скрипты
+- [tsconfig.json](mdc:tsconfig.json) - настройки TypeScript
+
+## Технологии:
+- Expo SDK ~53.0
+- React Native 0.79.5
+- TypeScript
+- Redux Toolkit
+- Expo Router
+- i18next для локализации
